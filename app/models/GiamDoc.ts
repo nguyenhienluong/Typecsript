@@ -1,7 +1,8 @@
 class GiamDoc extends NhanVien {
     public phucap: number;
-    constructor (manhanvien,ho,ten,luongcoban,sodienthoai,email,ngaylam,chucvu,phucap) {
-        super(manhanvien,ho,ten,luongcoban,sodienthoai,email,ngaylam,chucvu);
+    //(manhanvien:string,ho:string,ten:string,luongcoban:number,chucvu:string)
+    constructor (manhanvien,ho,ten,luongcoban,chucvu,phucap) {
+        super(manhanvien,ho,ten,luongcoban,chucvu);
         this.phucap = phucap;
     }
     public tinhluong() {

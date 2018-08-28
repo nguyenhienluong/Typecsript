@@ -33,16 +33,16 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<input type="text" name="ngaysinh" id="luongcb" class="form-control input-sm" placeholder="Lương cơ bản">
+									<input type="text" name="luongcb" id="luongcoban" class="form-control input-sm" placeholder="Lương cơ bản">
 									<span class="sp-thongbao" id="tbngaysinh"></span>
 								</div>
 								
 								<div class="form-group">
-									<input type="text" name="sdt" id="sdt" class="form-control input-sm" placeholder="Số điện thoại">
+									<input type="text" name="phucap" id="phucap" class="form-control input-sm" placeholder="Phụ Cấp">
 									<span class="sp-thongbao" id="tbsdt"></span>
 								</div>
 								<div class="form-group">
-									<input type="text" name="sdt" id="email" class="form-control input-sm" placeholder="Email nhân viên">
+									<input type="text" name="hoahong" id="hoahong" class="form-control input-sm" placeholder="Hoa Hồng">
 									<span class="sp-thongbao" id="tbemail"></span>
 								</div>
 								<div class="form-group">
@@ -60,12 +60,16 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<select class="form-control" id="chucvu">
-										<option>Chọn chức vụ</option>
-										<option>Sếp</option>
+									<label for="">Loại Nhân Viên</label>
+									<!-- <select class="form-control" id="chucvu"> -->
+										<!-- <option value = ""class="loainhanvien">Chọn chức vụ</option> -->
+										<input type="radio" name="loainhanvien" value="nhanvien" class="loainv">Nhân Viên
+										<input type="radio" name="loainhanvien" value="quanly" class="loainv">Quản Lý
+										<input type="radio" name="loainhanvien" value="giamdoc" class="loainv">Giám Đốc
+										<!-- <option>Sếp</option>
 										<option>Trưởng phòng</option>
-										<option>Nhân viên</option>
-									</select>
+										<option>Nhân viên</option> -->
+									<!-- </select> -->
 									<span class="sp-thongbao" id="tbchucvu"></span>
 								</div>
 								<input type="button" value="Thêm Nhân Viên" class="btn btn-info btn-block" id="btnThem">
