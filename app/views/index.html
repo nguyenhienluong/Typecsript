@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0npm start">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="margin-bottom: 30px;">
+		<div class="row centered-form">
+			<div class="col-xs-12 col-sm-6 center wow fadeInUp">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Quản lý nhân viên</h3>
+					</div>
+					<div class="panel-body">
+						<form role="form">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="ho" id="ho" class="form-control input-sm floatlabel" placeholder="Họ"> 
+											<span class="sp-thongbao" id="tbho"></span>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="ten" id="ten" class="form-control input-sm" placeholder="Tên">
+											<span class="sp-thongbao" id="tbten"></span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="text" name="ngaysinh" id="luongcb" class="form-control input-sm" placeholder="Lương cơ bản">
+									<span class="sp-thongbao" id="tbngaysinh"></span>
+								</div>
+								
+								<div class="form-group">
+									<input type="text" name="sdt" id="sdt" class="form-control input-sm" placeholder="Số điện thoại">
+									<span class="sp-thongbao" id="tbsdt"></span>
+								</div>
+								<div class="form-group">
+									<input type="text" name="sdt" id="email" class="form-control input-sm" placeholder="Email nhân viên">
+									<span class="sp-thongbao" id="tbemail"></span>
+								</div>
+								<div class="form-group">
+									<input type="text" name="msnv" id="msnv" class="form-control input-sm" placeholder="Mã nhân viên">
+									<span class="sp-thongbao" id="tbmanv"></span>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group" >
+											<div style="display: flex;">
+												<input type="text" name="ngayvaolam" id="datepicker" class="form-control input-sm" placeholder="Ngày vào làm">
+											</div>
+											<span class="sp-thongbao"></span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<select class="form-control" id="chucvu">
+										<option>Chọn chức vụ</option>
+										<option>Sếp</option>
+										<option>Trưởng phòng</option>
+										<option>Nhân viên</option>
+									</select>
+									<span class="sp-thongbao" id="tbchucvu"></span>
+								</div>
+								<input type="button" value="Thêm Nhân Viên" class="btn btn-info btn-block" id="btnThem">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="hienthi" class="container">
+			<div class="table-responsive">
+					<table class="table" id="tablehienthi">
+						<!-- manv, ho, ten, ngaysinh, sdt, email, chucvu, ngayvaolam -->
+					  <thead>
+						<tr>
+						  <th>#</th>
+						  <th>Mã nhân viên</th>
+						  <th>Họ</th>
+						  <th>Tên</th>
+						  <th>Ngày Sinh</th>
+						  <th>Số điện thoại</th>
+						  <th>Email</th>
+						  <th>Chức vụ</th>
+						  <th>Ngày vào làm</th>
+						  <th>Chức năng</th>
+						</tr>
+					  </thead>
+					  <tbody id="tbodynhanvien"></tbody>
+					</table>
+				</div>
+			</div>
+	</div>
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../models/NhanVien.js"></script>
+<script src="../models/NhanVienThuong.js"></script>
+<script src="../models/QuanLy.js"></script>
+<script src="../models/Sep.js"></script>
+<script src="../models/DanhSachNhanVien.js"></script>
+<script src="../controllers/index.js"></script>
+</html>
