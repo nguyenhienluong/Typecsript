@@ -2,6 +2,7 @@ const path = require('path');
 module.exports = {
     entry: './app/controllers/index.ts',
     devtool: 'source-map',
+    mode: 'production',
     module: {
         rules: [
             //Typescript loader
